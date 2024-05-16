@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+}
+.content{
+    padding: 5vh 12vw 0 12vw;
+    height: 100vh;
+    width: auto;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content_header h2{
+    font-weight: 500;
+    color: #8643DC;
+}
+
+.content_header h2:after{
+    content: '';
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: #8643DC;
+    margin-top: 10px;
+
+}
+
+.content_text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_text-url{
+    color: #8643DC;
+    font-weight: 500;
+}
+
+.content_inputs {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.content_inputs input{
+    height: 7vh;
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    font-family: Red Hat Display, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    border-bottom: 0.5px solid grey;
+}
+
+/*Це можна реалізувати і через ::after ) */
+/*лінію під інпутом*/
+
+.content_inputs input:hover{
+    border-bottom: 0.5px black solid;
+}
+
+.content_inputs input:focus{
+    outline: none;
+    border-bottom: 0.5px black solid;
+}
+
+.content_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 35px;
+    align-items: center;
+}
+
+.content_buttons-mainButton{
+    width: 13vw;
+    height: 7vh;
+    border-radius: 30px;
+    color: white;
+    background-color: #8643DC;
+    border: 0;
+    font-family: Red Hat Display, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    min-width: 200px;
+}
+
+.content_buttons-mainButton:hover{
+    background-color: #7139ba;
+    cursor:pointer;
+
+}
+
+.content_buttons-rightButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_buttons-rightButtons-buttons{
+    width: 30px;
+    height: 30px;
+    margin: 0 15px 0 15px;
+}
+
+.content_footer{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content_footer h1{
+    font-weight: 500;
+}
+
+.content_footer_images-image{
+    width:  70px;
+    height: 70px;
+    margin: 0 25px 0 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    .content_text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content_buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content_buttons-rightButtons{
+        margin-top: 20px;
+    }
+    .content_footer_images-image{
+        width:  45px;
+        height: 45px;
+    }
+}
