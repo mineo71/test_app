@@ -1,5 +1,6 @@
 body{
     margin: 0;
+
 }
 .content{
     padding: 5vh 12vw 0 12vw;
@@ -7,6 +8,8 @@ body{
     width: auto;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    background: linear-gradient(180deg, rgba(187, 133, 255, 0.166) -8.54%, rgba(255, 244, 251, 0.2) 100%);
+    background-attachment: fixed;
 }
 
 .content_header h2{
@@ -52,6 +55,7 @@ body{
     line-height: 30px;
     text-align: left;
     border-bottom: 0.5px solid grey;
+    background-color: transparent;
 }
 
 /*Це можна реалізувати і через ::after ) */
